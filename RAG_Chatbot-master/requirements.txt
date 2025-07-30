@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-community
+langchain-groq
+langchain-openai
+faiss-cpu
+pypdf
+python-docx
+unstructured
+pandas
+numpy
+scikit-learn
+tiktoken
