@@ -1,0 +1,44 @@
+research_company_task:
+  description: >
+    Conduct thorough research on {target_company}. Focus on industry, size, recent news, and challenges where {our_product} could help.
+    Look for relevant initiatives (digital transformation, procurement revamp, etc.).
+  expected_output: |
+    ## Company Overview
+    - Brief background on {target_company}
+    - Key business focus
+    - Current challenges or initiatives
+    - Notes on fit for {our_product}
+
+analyze_org_structure_task:
+  description: >
+    Analyze {target_company}'s organizational structure.
+    Identify relevant departments and roles (e.g., CTO, Head of Procurement, Operations).
+  expected_output: |
+    ## Departmental Overview
+    - List departments relevant to buying decisions
+    - Explain how each may be involved in purchase of {our_product}
+
+find_key_contacts_task:
+  description: >
+    Identify individuals at {target_company} with influence over purchasing {our_product}.
+    Include title, department, and professional links if possible.
+  expected_output: |
+    ## Key Contacts
+    | Name | Title | Department | LinkedIn |
+    |------|-------|------------|----------|
+    - Aim for 3–5 contacts relevant to the identified roles
+
+develop_approach_strategy_task:
+  description: >
+    Using all gathered data, develop a contact strategy for {target_company}.
+    Focus on messaging and value delivery based on the company’s context and contacts' roles.
+  expected_output: |
+    ## Outreach Strategy
+    - Tailored pitch strategy per persona (e.g., tech leader vs. ops)
+
+    ## Value Proposition
+    - Why {our_product} is ideal for {target_company}
+    - Specific benefits and differentiators
+
+    ## Summary
+    Combine all findings into a single clean Markdown document.

@@ -1,0 +1,54 @@
+company_researcher:
+  role: Company Research Specialist
+  goal: Gather comprehensive information about the target company
+  backstory: >
+    You are an expert at researching companies, with a keen eye for details that matter to sales professionals.
+    Your task is to gather key information about {target_company} that will be relevant for identifying potential buyers of {our_product}.
+  llm:
+    provider: openrouter
+    config:
+      api_key: ${OPENROUTER_API_KEY}
+      model: mistralai/mistral-7b-instruct:free
+      max_tokens: 600
+      temperature: 0.3
+
+org_structure_analyst:
+  role: Organizational Structure Analyst
+  goal: Analyze the company's structure to identify key decision-making roles
+  backstory: >
+    You understand corporate hierarchies and help map decision-makers.
+    Analyze {target_company}'s structure and highlight who might influence purchases of {our_product}.
+  llm:
+    provider: openrouter
+    config:
+      api_key: ${OPENROUTER_API_KEY}
+      model: mistralai/mistral-7b-instruct:free
+      max_tokens: 600
+      temperature: 0.3
+
+contact_finder:
+  role: Key Contact Identifier
+  goal: Find specific individuals in key roles at the target company
+  backstory: >
+    You are skilled at identifying and locating individuals within organizations.
+    Find names, titles, departments, and contact information for decision-makers at {target_company}.
+  llm:
+    provider: openrouter
+    config:
+      api_key: ${OPENROUTER_API_KEY}
+      model: mistralai/mistral-7b-instruct:free
+      max_tokens: 600
+      temperature: 0.3
+
+sales_strategist:
+  role: Sales Approach Strategist
+  goal: Develop a strategy for approaching the identified contacts
+  backstory: >
+    You're a sales expert. Craft a tailored outreach strategy for {target_company} that appeals to decision-makers and highlights the value of {our_product}.
+  llm:
+    provider: openrouter
+    config:
+      api_key: ${OPENROUTER_API_KEY}
+      model: mistralai/mistral-7b-instruct:free
+      max_tokens: 600
+      temperature: 0.3
